@@ -29,9 +29,9 @@ The project explores a problem I consider central to modern automation engineeri
 
 **Implemented concepts:**
 
-`FastAPI` · `Python` · `SQL` · `durable queue` · `asynchronous workers` · `idempotency` · `bounded retries` · `dead-letter handling` · `audit trail` · `metrics` · `Docker` · `CI`
+`FastAPI` · `Python` · `SQL` · `HTTP integrations` · `RPA gateway boundary` · `durable queue` · `asynchronous workers` · `idempotency` · `bounded retries` · `dead-letter handling` · `audit trail` · `metrics` · `Docker` · `CI` · `LLM document enrichment` · `human-review guardrails` · `evaluation harness`
 
-The repository also documents architectural decisions, failure handling, security considerations and the boundary where AI/LLM capabilities could be introduced without turning them into an unnecessary dependency.
+The repository documents architectural decisions, failure handling, security considerations and a controlled AI boundary where probabilistic document enrichment remains separate from deterministic orchestration. The LLM capability is implemented as a configurable reference integration with structured validation and review thresholds; it is not presented as proof of production model accuracy.
 
 ## How I approach automation
 
