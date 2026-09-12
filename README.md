@@ -1,12 +1,14 @@
 # Jhostin Jhonatan Pastor Lliuya
 
-### Senior Automation Engineer
+### Senior Automation Engineer | RPA & Intelligent Automation | Python | APIs
 
 I design and build **end-to-end automation solutions** for enterprise processes, combining RPA with software engineering, system integrations, APIs and data when the problem requires more than UI automation.
 
 My background is rooted in enterprise RPA and intelligent automation, with hands-on experience across the automation lifecycle: process analysis, solution design, development, deployment, platform administration, production monitoring and incident support.
 
 I am currently deepening the software-engineering side of automation through **Python, C#, APIs, SQL and AI-assisted workflows**, with a focus on building solutions that are maintainable, observable and resilient rather than treating RPA as the default answer to every problem.
+
+**Professional profile:** [LinkedIn — Jhostin Jhonatan Pastor Lliuya](https://www.linkedin.com/in/jhostin-jhonatan-pastor-lliuya)
 
 ## Engineering focus
 
