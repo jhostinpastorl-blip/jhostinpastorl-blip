@@ -23,15 +23,15 @@ I am currently deepening the software-engineering side of automation through **P
 
 ### [Enterprise Automation Orchestrator](https://github.com/jhostinpastorl-blip/enterprise-automation-orchestrator)
 
-A reference architecture for resilient enterprise automation built around an API-first control plane and asynchronous workers.
+A reference architecture for resilient enterprise automation built around an API-first control plane, durable state and asynchronous workers.
 
 The project explores a problem I consider central to modern automation engineering: **how to keep business orchestration, state and reliability controls outside the RPA workflow while using robots only where UI interaction is actually required.**
 
 **Implemented concepts:**
 
-`FastAPI` · `Python` · `SQL` · `HTTP integrations` · `RPA gateway boundary` · `durable queue` · `asynchronous workers` · `idempotency` · `bounded retries` · `dead-letter handling` · `audit trail` · `metrics` · `Docker` · `CI` · `LLM document enrichment` · `human-review guardrails` · `evaluation harness`
+`FastAPI` · `Python` · `SQLAlchemy` · `PostgreSQL-compatible state` · `Redis dispatch` · `HTTP integrations` · `UiPath Orchestrator boundary` · `asynchronous workers` · `idempotency` · `bounded retries` · `dead-letter handling` · `audit trail` · `structured logging` · `correlation IDs` · `Prometheus-style metrics` · `Docker` · `CI` · `LLM document enrichment` · `human-review guardrails` · `evaluation harness`
 
-The repository documents architectural decisions, failure handling, security considerations and a controlled AI boundary where probabilistic document enrichment remains separate from deterministic orchestration. The LLM capability is implemented as a configurable reference integration with structured validation and review thresholds; it is not presented as proof of production model accuracy.
+The repository includes both a low-friction local mode and a distributed reference topology with PostgreSQL-compatible persistence, Redis-backed dispatch and multiple workers. It also documents security, observability, failure handling and AI boundaries. These are portfolio/reference implementations and contract-tested integration patterns; they are not presented as proof of a managed-cloud production deployment or live production-scale operation.
 
 ## How I approach automation
 
