@@ -25,13 +25,15 @@ I am currently deepening the software-engineering side of automation through **P
 
 A reference architecture for resilient enterprise automation built around an API-first control plane, durable state and asynchronous workers.
 
+**Live API:** [Railway deployment](https://api-production-f93c7.up.railway.app)
+
 The project explores a problem I consider central to modern automation engineering: **how to keep business orchestration, state and reliability controls outside the RPA workflow while using robots only where UI interaction is actually required.**
 
 **Implemented concepts:**
 
-`FastAPI` · `Python` · `SQLAlchemy` · `PostgreSQL-compatible state` · `Redis dispatch` · `HTTP integrations` · `UiPath Orchestrator boundary` · `asynchronous workers` · `idempotency` · `bounded retries` · `dead-letter handling` · `audit trail` · `structured logging` · `correlation IDs` · `Prometheus-style metrics` · `Docker` · `CI` · `LLM document enrichment` · `human-review guardrails` · `evaluation harness`
+`FastAPI` · `Python` · `SQLAlchemy` · `PostgreSQL` · `Redis dispatch` · `HTTP integrations` · `UiPath Orchestrator boundary` · `asynchronous workers` · `idempotency` · `bounded retries` · `dead-letter handling` · `audit trail` · `structured logging` · `correlation IDs` · `Prometheus-style metrics` · `Docker` · `GitHub Actions CI` · `Railway` · `LLM document enrichment` · `human-review guardrails` · `evaluation harness`
 
-The repository includes both a low-friction local mode and a distributed reference topology with PostgreSQL-compatible persistence, Redis-backed dispatch and multiple workers. It also documents security, observability, failure handling and AI boundaries. These are portfolio/reference implementations and contract-tested integration patterns; they are not presented as proof of a managed-cloud production deployment or live production-scale operation.
+The repository includes a low-friction local mode, distributed integration validation against PostgreSQL and Redis, and a live Railway deployment with separate API, worker, PostgreSQL and Redis services. The deployment demonstrates that the reference topology can run on a managed cloud platform; it is not presented as evidence of enterprise production scale, load-tested availability, live production UiPath credentials or enterprise identity controls.
 
 ## How I approach automation
 
