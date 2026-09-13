@@ -31,9 +31,9 @@ The project explores a problem I consider central to modern automation engineeri
 
 **Implemented concepts:**
 
-`FastAPI` · `Python` · `SQLAlchemy` · `PostgreSQL` · `Redis dispatch` · `HTTP integrations` · `UiPath Orchestrator boundary` · `asynchronous workers` · `idempotency` · `bounded retries` · `dead-letter handling` · `audit trail` · `structured logging` · `correlation IDs` · `Prometheus-style metrics` · `Docker` · `GitHub Actions CI` · `Railway` · `LLM document enrichment` · `human-review guardrails` · `evaluation harness`
+`FastAPI` · `Python` · `SQLAlchemy` · `PostgreSQL` · `Alembic` · `Redis dispatch` · `HTTP integrations` · `UiPath Orchestrator boundary` · `asynchronous workers` · `idempotency` · `bounded retries` · `dead-letter handling` · `audit trail` · `structured logging` · `correlation IDs` · `operational HTTP metrics` · `Prometheus-style metrics` · `Docker` · `GitHub Actions CI` · `Railway` · `LLM document enrichment` · `human-review guardrails` · `evaluation harness`
 
-The repository includes a low-friction local mode, distributed integration validation against PostgreSQL and Redis, and a live Railway deployment with separate API, worker, PostgreSQL and Redis services. The deployment demonstrates that the reference topology can run on a managed cloud platform; it is not presented as evidence of enterprise production scale, load-tested availability, live production UiPath credentials or enterprise identity controls.
+The repository includes a low-friction local mode, managed schema migrations, distributed integration validation against PostgreSQL and Redis, and a live Railway deployment with separate API, worker, PostgreSQL and Redis services. Dependency-aware readiness verifies database and broker connectivity before the API is considered ready. The deployment demonstrates that the reference topology can run on a cloud platform; it is not presented as evidence of enterprise production scale, load-tested availability, live production UiPath credentials or enterprise identity controls.
 
 ## How I approach automation
 
