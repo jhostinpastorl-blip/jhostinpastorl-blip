@@ -29,15 +29,15 @@ Key engineering concerns include asynchronous execution, atomic work claiming, i
 
 A reference deployment is available on Railway. It demonstrates the topology, not enterprise production scale or production-grade cloud durability.
 
-### Intelligent Automation Case Orchestrator — portfolio project
+### [Intelligent Automation Case Orchestrator](https://github.com/jhostinpastorl-blip/intelligent-automation-case-orchestrator)
 
 A guarded document-driven automation architecture that separates probabilistic interpretation from deterministic authorization and execution:
 
 `Document → LLM structured extraction → schema validation → policy → human review when required → controlled tool → API/RPA orchestration`
 
-The central design rule is **LLM recommendation != authorization != execution**. The project explores function calling, typed outputs, deterministic policy, HITL, persisted audit state, token/cost accounting, evaluation and a controlled handoff to the automation execution layer.
+The central design rule is **LLM recommendation != authorization != execution**. The project demonstrates function calling, typed outputs, deterministic policy, HITL, persisted audit state, token/cost accounting, evaluation and a controlled handoff to the automation execution layer.
 
-The repository will be published after its standalone CI/deployment validation is complete; I do not present unvalidated portfolio code as production evidence.
+The public repository is validated in GitHub Actions with Ruff, pytest, a deterministic five-case evaluation gate and a clean container build. It remains a portfolio/reference implementation rather than a claim of enterprise production AI scale.
 
 ## Engineering principles
 
