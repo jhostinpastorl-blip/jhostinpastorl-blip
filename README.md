@@ -1,56 +1,58 @@
 # Jhostin Jhonatan Pastor Lliuya
 
-### Senior Automation Engineer | RPA & Intelligent Automation | Python | APIs
+### Senior Automation Engineer | Intelligent Automation | Python · APIs · RPA
 
-I design and build **end-to-end automation solutions** for enterprise processes, combining RPA with software engineering, system integrations, APIs and data when the problem requires more than UI automation.
+I design **end-to-end enterprise automation solutions**, combining RPA with software engineering, APIs, data and controlled AI capabilities according to the problem rather than defaulting to UI automation.
 
-My background is rooted in enterprise RPA and intelligent automation, with hands-on experience across the automation lifecycle: process analysis, solution design, development, deployment, platform administration, production monitoring and incident support.
+My professional background is rooted in enterprise RPA, with hands-on experience across process analysis, solution design, development, deployment, platform administration, production monitoring and incident support. I am extending that foundation into automation engineering through Python, APIs, SQL, distributed execution patterns, observability and AI-assisted workflows.
 
-I am currently deepening the software-engineering side of automation through **Python, C#, APIs, SQL and AI-assisted workflows**, with a focus on building solutions that are maintainable, observable and resilient rather than treating RPA as the default answer to every problem.
-
-**Professional profile:** [LinkedIn — Jhostin Jhonatan Pastor Lliuya](https://www.linkedin.com/in/jhostin-jhonatan-pastor-lliuya)
+[LinkedIn](https://www.linkedin.com/in/jhostin-jhonatan-pastor-lliuya)
 
 ## Engineering focus
 
-- **Automation Engineering:** transactional automation, reusable components, exception handling, logging, retries, idempotency and production support
-- **RPA & Intelligent Automation:** UiPath, Automation Anywhere, Blue Prism and Rocketbot
-- **Software & Integration:** Python, C#, REST APIs, SQL and enterprise system integrations
-- **Enterprise environments:** SAP, web applications, Excel, Outlook, databases and API-based integrations
-- **Platform operations:** orchestration, credential management, environment promotion, monitoring and incident handling
-- **Architecture mindset:** choosing between RPA, APIs, services, code and hybrid approaches according to system constraints and maintainability
+- **Automation engineering:** transactional processing, reusable components, retries, idempotency, exception handling and recoverability
+- **Integration design:** choosing between direct APIs, RPA, code and hybrid approaches based on system constraints
+- **RPA platforms:** UiPath, Automation Anywhere, Blue Prism and Rocketbot
+- **Software & data:** Python, REST APIs, SQL, PostgreSQL and Redis
+- **Operations:** orchestration, credential controls, environment promotion, structured logging, monitoring and incident handling
+- **Intelligent automation:** bounded LLM workflows, structured outputs, deterministic policy, human review and evaluation
 
-## Featured engineering project
+## Featured engineering work
 
 ### [Enterprise Automation Orchestrator](https://github.com/jhostinpastorl-blip/enterprise-automation-orchestrator)
 
-A reference architecture for resilient enterprise automation built around an API-first control plane, durable state and asynchronous workers.
+Reference implementation for resilient enterprise automation where orchestration state and reliability controls remain outside the robot workflow.
 
-**Live API:** [Railway deployment](https://api-production-f93c7.up.railway.app)
+`FastAPI` · `Python` · `PostgreSQL` · `Redis` · `SQLAlchemy` · `Alembic` · `Docker` · `GitHub Actions` · `OpenTelemetry`
 
-The project explores a problem I consider central to modern automation engineering: **how to keep business orchestration, state and reliability controls outside the RPA workflow while using robots only where UI interaction is actually required.**
+Key engineering concerns include asynchronous execution, atomic work claiming, idempotency, bounded retries, dead-letter handling and replay, API/RPA adapter boundaries, rate-limit handling, operational metrics and auditable lifecycle state.
 
-**Implemented concepts:**
+A reference deployment is available on Railway. It demonstrates the topology, not enterprise production scale or production-grade cloud durability.
 
-`FastAPI` · `Python` · `SQLAlchemy` · `PostgreSQL` · `Alembic` · `Redis dispatch` · `HTTP integrations` · `UiPath Orchestrator boundary` · `asynchronous workers` · `idempotency` · `bounded retries` · `dead-letter handling` · `audit trail` · `structured logging` · `correlation IDs` · `operational HTTP metrics` · `Prometheus-style metrics` · `Docker` · `GitHub Actions CI` · `Railway` · `LLM document enrichment` · `human-review guardrails` · `evaluation harness`
+### Intelligent Automation Case Orchestrator — portfolio project
 
-The repository includes a low-friction local mode, managed schema migrations, distributed integration validation against PostgreSQL and Redis, and a live Railway deployment with separate API, worker, PostgreSQL and Redis services. Dependency-aware readiness verifies database and broker connectivity before the API is considered ready. The deployment demonstrates that the reference topology can run on a cloud platform; it is not presented as evidence of enterprise production scale, load-tested availability, live production UiPath credentials or enterprise identity controls.
+A guarded document-driven automation architecture that separates probabilistic interpretation from deterministic authorization and execution:
 
-## How I approach automation
+`Document → LLM structured extraction → schema validation → policy → human review when required → controlled tool → API/RPA orchestration`
 
-I do not see RPA, APIs, custom code and AI as competing technologies. They solve different parts of the problem.
+The central design rule is **LLM recommendation != authorization != execution**. The project explores function calling, typed outputs, deterministic policy, HITL, persisted audit state, token/cost accounting, evaluation and a controlled handoff to the automation execution layer.
 
-A UI robot can be the right integration mechanism when a system exposes no suitable interface. When an API exists, direct integration is usually more robust. When business logic becomes complex or reusable, it may belong in a service or software component instead of inside a workflow. AI becomes useful when the problem contains genuine ambiguity or unstructured information and its outputs can be controlled, evaluated and audited.
+The repository will be published after its standalone CI/deployment validation is complete; I do not present unvalidated portfolio code as production evidence.
 
-That decision-making layer is the direction in which I am developing my career: from building automations to **engineering automation systems**.
+## Engineering principles
 
-## Current direction
+**Prefer a supported API over UI automation when it provides a more reliable integration boundary.** Use RPA when UI interaction is genuinely required. Move complex or reusable logic into code/services when it improves maintainability. Use AI when ambiguity or unstructured information justifies probabilistic interpretation—and place deterministic controls around its outputs.
 
-My professional path is evolving around:
+That is the direction of my career: moving from developing individual bots toward **engineering automation systems**.
 
-**RPA → Automation Engineering → Intelligent / AI Automation → Technical Leadership → Automation & AI Solution Architecture**
+## Current development direction
 
-The objective is not to accumulate tools, but to strengthen the engineering capabilities behind enterprise automation: system design, integrations, reliability, security, observability and technical decision-making.
+`RPA → Automation Engineering → Intelligent / AI Automation → Technical Leadership → Automation & AI Solution Architecture`
+
+The goal is not to accumulate tools or titles. It is to strengthen system design, integrations, reliability, security, observability and technical decision-making until broader technical ownership is supported by real evidence.
 
 ---
 
-**Core technologies:** Python · C# · SQL · REST APIs · UiPath · Automation Anywhere · Blue Prism · Rocketbot · Power Automate · SAP Automation
+**Current core:** Python · REST APIs · SQL · UiPath · Automation Anywhere · Blue Prism · Rocketbot · Power Automate · SAP automation
+
+**Developing further:** C# · cloud architecture · AI/LLM engineering · system design
